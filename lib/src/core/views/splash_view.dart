@@ -9,7 +9,6 @@ import 'decompress_view.dart';
 class SplashView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final Size screenDimensions = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color(0xfff8f9fa),
       appBar: AppBar(
@@ -40,8 +39,8 @@ class SplashView extends StatelessWidget {
               Expanded(
                   child: PrimaryButton(
                 onPressed: () {
-                    Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (_) => DecompressView()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => DecompressView()));
                 },
                 child: HomeOptionCard(
                   iconData: Icons.open_in_full,

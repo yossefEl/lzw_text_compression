@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lzw_compression_app/src/core/components/base_card.dart';
 
-import 'compression_result_view.dart';
 
 class CompressResultView extends StatelessWidget {
   @override
